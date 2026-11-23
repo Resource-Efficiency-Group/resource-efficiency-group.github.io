@@ -1,0 +1,64 @@
+<svg class="synergy" viewBox="0 0 960 470" role="img" aria-labelledby="syn-title syn-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="syn-title">How the research lines connect</title>
+  <desc id="syn-desc">Energy and carbon efficiency is a chain from measuring Arm power controls, to modelling the system in WAVE, to deciding with a carbon-aware scheduler. Memory disaggregation lets jobs use fewer nodes, which gives the scheduler more nodes to power down. Emerging architectures lower energy per operation. Scientific computing supplies real workloads. All lines share Deucalion as their testbed.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" class="syn-arrowhead"/></marker>
+  </defs>
+  <!-- Energy band -->
+  <rect x="20" y="20" width="920" height="170" rx="18" class="syn-band band-energy"/>
+  <text x="44" y="52" class="syn-band-label c-energy">ENERGY &amp; CARBON EFFICIENCY</text>
+  <g class="syn-node">
+    <rect x="50" y="72" width="250" height="92" rx="12"/>
+    <text x="175" y="106" class="syn-h">Measure</text>
+    <text x="175" y="130" class="syn-t">Arm power controls</text>
+    <text x="175" y="148" class="syn-t">A64FX eco · retention · DVFS</text>
+  </g>
+  <g class="syn-node">
+    <rect x="355" y="72" width="250" height="92" rx="12"/>
+    <text x="480" y="106" class="syn-h">Model</text>
+    <text x="480" y="130" class="syn-t">WAVE system simulator</text>
+    <text x="480" y="148" class="syn-t">power · PUE · grid · storage</text>
+  </g>
+  <g class="syn-node">
+    <rect x="660" y="72" width="250" height="92" rx="12"/>
+    <text x="785" y="106" class="syn-h">Decide</text>
+    <text x="785" y="130" class="syn-t">Carbon-aware scheduling</text>
+    <text x="785" y="148" class="syn-t">green-energy budgets</text>
+  </g>
+  <path d="M300 118 H350" class="syn-edge" marker-end="url(#arr)"/>
+  <path d="M605 118 H655" class="syn-edge" marker-end="url(#arr)"/>
+  <text x="327" y="108" class="syn-e">models</text>
+  <text x="632" y="108" class="syn-e">oracles</text>
+
+  <!-- lower boxes -->
+  <g class="syn-node node-memory">
+    <rect x="660" y="240" width="250" height="100" rx="12"/>
+    <text x="785" y="274" class="syn-h c-memory">Memory disaggregation</text>
+    <text x="785" y="298" class="syn-t">object-level remote memory</text>
+    <text x="785" y="316" class="syn-t">over MPI</text>
+  </g>
+  <g class="syn-node node-arch">
+    <rect x="50" y="240" width="250" height="100" rx="12"/>
+    <text x="175" y="274" class="syn-h c-architectures">Emerging architectures</text>
+    <text x="175" y="298" class="syn-t">CGRAs · cross-architecture</text>
+    <text x="175" y="316" class="syn-t">characterisation</text>
+  </g>
+  <g class="syn-node node-science">
+    <rect x="355" y="240" width="250" height="100" rx="12"/>
+    <text x="480" y="274" class="syn-h c-science">Scientific computing</text>
+    <text x="480" y="298" class="syn-t">HEP · photonics · materials</text>
+    <text x="480" y="316" class="syn-t">production codes</text>
+  </g>
+  <path d="M785 240 V168" class="syn-edge e-memory" marker-end="url(#arr)"/>
+  <text x="797" y="212" class="syn-e start">fewer active nodes</text>
+  <path d="M175 240 V168" class="syn-edge e-arch" marker-end="url(#arr)"/>
+  <text x="187" y="212" class="syn-e start">energy per operation</text>
+  <path d="M480 240 V168" class="syn-edge e-science" marker-end="url(#arr)"/>
+  <text x="492" y="212" class="syn-e start">real workloads</text>
+
+  <!-- Deucalion base -->
+  <rect x="20" y="380" width="920" height="70" rx="14" class="syn-base"/>
+  <text x="480" y="410" class="syn-h base-h">Deucalion · shared testbed</text>
+  <text x="480" y="432" class="syn-t base-t">A64FX Arm + HBM2 · AMD EPYC x86 · NVIDIA A100 — telemetry, job traces, operations team</text>
+  <path d="M175 380 V344 M480 380 V344 M785 380 V344" class="syn-edge thin"/>
+</svg>

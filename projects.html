@@ -1,0 +1,40 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+eyebrow: Involvement
+lead: >-
+  Funded projects, infrastructures and programmes we take part in, and the open
+  software we develop.
+---
+<div class="projects">
+  {% for pr in site.data.projects %}
+  <article class="project status-{{ pr.status }}">
+    <header>
+      <div>
+        <h2>{% if pr.url != "" %}<a href="{{ pr.url }}">{{ pr.name }}</a>{% else %}{{ pr.name }}{% endif %}</h2>
+        <p class="muted">{{ pr.full_name }}</p>
+      </div>
+      <span class="status">{{ pr.status }}</span>
+    </header>
+    <dl class="meta">
+      {% if pr.funding != "" %}<div><dt>Funding</dt><dd>{{ pr.funding }}</dd></div>{% endif %}
+      {% if pr.period != "" %}<div><dt>Period</dt><dd>{{ pr.period }}</dd></div>{% endif %}
+    </dl>
+    <p>{{ pr.summary }}</p>
+    <p class="role"><b>Our role.</b> {{ pr.role }}</p>
+    <div class="tags">{% for l in pr.lines %}{% for r in site.data.research %}{% if r.id == l %}<span class="tag tag-{{ r.id }}">{{ r.short }}</span>{% endif %}{% endfor %}{% endfor %}</div>
+  </article>
+  {% endfor %}
+</div>
+
+<h2 class="group-h">Software</h2>
+<div class="software">
+  {% for s in site.data.software %}
+  <article class="sw">
+    <h3>{% if s.url != "" %}<a href="{{ s.url }}">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}</h3>
+    <p>{{ s.description }}</p>
+    <div class="tags">{% for l in s.lines %}{% for r in site.data.research %}{% if r.id == l %}<span class="tag tag-{{ r.id }}">{{ r.short }}</span>{% endif %}{% endfor %}{% endfor %}</div>
+  </article>
+  {% endfor %}
+</div>

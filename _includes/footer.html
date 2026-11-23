@@ -1,0 +1,19 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="footer-brand"><img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="28" height="28"> {{ site.title }}</div>
+      <p class="muted">{{ site.address }}</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      {% for item in site.data.navigation %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% endfor %}
+    </div>
+    <div>
+      <h4>Contact</h4>
+      {% if site.email != "" %}<a href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}
+      {% if site.github != "" %}<a href="https://github.com/{{ site.github }}">github.com/{{ site.github }}</a>{% endif %}
+      <a href="{{ '/team/' | relative_url }}#join">Join the group</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom muted">© {{ site.time | date: "%Y" }} {{ site.title }} · Built with Jekyll on GitHub Pages</div>
+</footer>

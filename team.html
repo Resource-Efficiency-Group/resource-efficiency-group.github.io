@@ -1,0 +1,66 @@
+---
+layout: page
+title: Team
+permalink: /team/
+eyebrow: People
+lead: >-
+  We are researchers and students at the University of Minho and INESC TEC.
+  Our dissertations run on Deucalion, and many are carried out together with
+  its operations team.
+---
+{% assign pi = site.data.team.pi %}
+<section class="pi">
+  {% if pi.photo != "" %}<img class="avatar avatar-lg" src="{{ pi.photo | relative_url }}" alt="{{ pi.name }}">{% else %}<div class="avatar avatar-lg avatar-initials" aria-hidden="true">AP</div>{% endif %}
+  <div>
+    <p class="eyebrow">{{ pi.role }}</p>
+    <h2>{{ pi.name }}</h2>
+    <p class="muted">{{ pi.position }}</p>
+    <p>{{ pi.bio }}</p>
+    <div class="pi-links">
+      {% if pi.email != "" %}<a class="chip-link" href="mailto:{{ pi.email }}">E-mail</a>{% endif %}
+      {% if pi.links.orcid != "" %}<a class="chip-link" href="{{ pi.links.orcid }}">ORCID</a>{% endif %}
+      {% if pi.links.scholar != "" %}<a class="chip-link" href="{{ pi.links.scholar }}">Google Scholar</a>{% endif %}
+      {% if pi.links.github != "" %}<a class="chip-link" href="{{ pi.links.github }}">GitHub</a>{% endif %}
+    </div>
+  </div>
+</section>
+
+<h2 class="group-h">PhD candidates</h2>
+<div class="people">
+  {% for m in site.data.team.phd %}{% include person.html %}{% endfor %}
+</div>
+
+<h2 class="group-h">MSc students <span class="muted count">2026/27</span></h2>
+<div class="people">
+  {% for m in site.data.team.msc %}{% include person.html %}{% endfor %}
+</div>
+
+<h2 class="group-h">Alumni</h2>
+<div class="people">
+  {% for m in site.data.team.alumni %}{% include person.html %}{% endfor %}
+</div>
+
+<h2 class="group-h">Collaborators</h2>
+<ul class="collab">
+  {% for c in site.data.team.collaborators %}<li><b>{{ c.name }}</b><span class="muted">{{ c.affiliation }}</span></li>{% endfor %}
+</ul>
+
+<section id="join" class="join">
+  <h2>Join us</h2>
+  <p>We welcome students who want to work on real problems on a production supercomputer. Each dissertation in the group uses Deucalion, and many topics are defined together with its operations team.</p>
+  <div class="join-grid">
+    <div>
+      <h3>MSc dissertations</h3>
+      <p>Students of UMinho's Master in Advanced Computing and other informatics master's programmes can take a dissertation in any of our four lines. New topics are published every year. Typical topics include power models for Arm processors, carbon-aware scheduling in WAVE, placement policies for remote memory and CGRA design-space exploration.</p>
+    </div>
+    <div>
+      <h3>PhD positions</h3>
+      <p>We support applications for FCT doctoral studentships and other PhD funding in energy-efficient HPC, memory disaggregation and reconfigurable architectures. Please get in touch well before the call deadlines so that we can prepare the work plan together.</p>
+    </div>
+    <div>
+      <h3>Visitors &amp; collaborations</h3>
+      <p>We are interested in joint work on Arm-based HPC, HPC digital twins, sustainable supercomputing and software memory pooling. We also host short research visits.</p>
+    </div>
+  </div>
+  {% if site.email != "" %}<a class="btn btn-primary" href="mailto:{{ site.email }}">Contact us</a>{% endif %}
+</section>

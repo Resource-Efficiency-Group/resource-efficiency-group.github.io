@@ -1,0 +1,71 @@
+# status: active | completed | education | infrastructure
+# lines: research-line ids
+
+- name: EPICURE
+  full_name: High-level specialised application support service in High-Performance Computing
+  status: active
+  period: Feb 2024 – Jan 2028
+  funding: EuroHPC Joint Undertaking · Digital Europe Programme
+  url: https://epicure-hpc.eu
+  summary: >-
+    EPICURE brings together the hosting entities of the EuroHPC supercomputers
+    to give users Level 2 and Level 3 application support, such as porting,
+    scaling and optimisation, and advanced training. The consortium has 16
+    partners from 14 countries and is coordinated by CSC (Finland). INESC TEC is
+    the Portuguese partner, which includes support for Deucalion users.
+  role: >-
+    Member of the INESC TEC team, contributing to the Advanced Training work
+    package (see the year-1 training activities report).
+  lines: []
+
+- name: QUANTHOS
+  full_name: Quantum Topological Integrated Photonics
+  status: active
+  period: ""                     # TODO
+  funding: FCT — Exploratory Research Projects
+  url: ""
+  summary: >-
+    QUANTHOS tests whether the topological protection of light, already
+    demonstrated for classical optics, extends to quantum states of light, and
+    builds simulation frameworks for designing quantum photonic circuits. The
+    principal investigator is Ariel Guerreiro (INESC TEC).
+  role: >-
+    HPC optimisation of the project's quantum-transport simulation workflow on
+    the x86 and Arm partitions of Deucalion (MSc dissertation).
+  lines: [science]
+
+- name: Deucalion living laboratory
+  full_name: Research and dissertations in cooperation with CNCA
+  status: infrastructure
+  period: Ongoing
+  funding: In cooperation with CNCA, the operator of the EuroHPC supercomputer Deucalion
+  url: ""
+  summary: >-
+    Deucalion is installed on UMinho's Azurém campus. It combines Fujitsu A64FX
+    Arm nodes with on-package HBM2, AMD EPYC x86 nodes and NVIDIA A100 GPU
+    nodes. Several of our research topics come from discussions with its
+    operations team. Telemetry, job traces and system access make it the common
+    testbed for all research lines.
+  role: >-
+    Study of the system's energy behaviour, scheduling, memory use and
+    application performance, through MSc dissertations proposed with the
+    operations team.
+  lines: [energy, memory, architectures, science]
+
+- name: EUMaster4HPC-2
+  full_name: European Master for High Performance Computing
+  status: education
+  period: Ongoing
+  funding: EuroHPC Joint Undertaking
+  url: ""                       # TODO: consortium website
+  summary: >-
+    The University of Minho is a Participating University in the second
+    EUMaster4HPC consortium, through its Master in Advanced Computing. The
+    Master is built around Deucalion: students use the supercomputer in classes
+    and in projects, and each dissertation either uses it or addresses a theme
+    proposed by its operations team.
+  role: >-
+    The group leader helped design the Master and is its Adjunct Director.
+    Students from the programme carry out MSc dissertations in the group.
+  lines: []
+

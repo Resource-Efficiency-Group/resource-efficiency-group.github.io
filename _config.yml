@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------
+# Resource Efficiency Group — site configuration
+# ---------------------------------------------------------------
+title: Resource Efficiency Group
+short_title: REG
+tagline: >-
+  More science from every joule, every gram of CO₂ and every byte of memory
+  in high-performance computing.
+description: >-
+  The Resource Efficiency Group studies energy and carbon efficiency, memory
+  disaggregation, emerging architectures and scientific computing on production
+  supercomputers. University of Minho and INESC TEC, Braga, Portugal.
+
+# Deployment. For a repository named <account>.github.io keep baseurl empty.
+# For a project repository (e.g. github.com/<account>/website) set baseurl: "/website".
+url: "https://resource-efficiency-group.github.io"   # TODO: replace with your account
+baseurl: ""
+
+# Contact and links (leave empty to hide)
+email: ""            # TODO: group or PI e-mail
+github: ""           # TODO: GitHub organisation, e.g. resource-efficiency-group
+address: >-
+  Department of Informatics, University of Minho,
+  Campus de Gualtar, 4710-057 Braga, Portugal
+
+# Author names printed in bold in publication lists (group members, past and present)
+highlight_authors:
+  - A. M. Pereira
+  - A. Pereira
+  - P. M. O. Carvalho
+
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,14 @@
+<li class="pub" data-lines="{{ p.lines | join: ' ' }}">
+  <span class="pub-type type-{{ p.type }}">{{ p.type }}</span>
+  <div class="pub-body">
+    <div class="pub-title">{% if p.doi != "" and p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</div>
+    <div class="pub-authors">{% for a in p.authors %}{% if site.highlight_authors contains a %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
+    <div class="pub-venue"><em>{{ p.venue }}</em>, {{ p.year }}{% if p.note %} · <span class="pub-note">{{ p.note }}</span>{% endif %}</div>
+    <div class="pub-links">
+      {% if p.doi != "" and p.doi %}<a class="chip-link" href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
+      {% if p.pdf %}<a class="chip-link" href="{{ p.pdf }}">PDF</a>{% endif %}
+      {% if p.code %}<a class="chip-link" href="{{ p.code }}">Code</a>{% endif %}
+      {% for l in p.lines %}{% for r in site.data.research %}{% if r.id == l %}<a class="tag tag-{{ r.id }}" href="{{ '/research/' | relative_url }}#{{ r.id }}">{{ r.short }}</a>{% endif %}{% endfor %}{% endfor %}
+    </div>
+  </div>
+</li>

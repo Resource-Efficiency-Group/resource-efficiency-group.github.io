@@ -1,0 +1,18 @@
+# Newest first. Keep "date" as free text.
+- date: Oct 2026
+  text: >-
+    Five new MSc dissertations started, on Arm energy management, carbon-aware
+    scheduling, MPI memory disaggregation, CGRA design-space exploration and the
+    QUANTHOS photonics workflow.
+- date: 2025
+  text: >-
+    <strong>WAVE</strong>, from Pedro Carvalho's MSc dissertation, was accepted at
+    the PECS 2025 workshop at Euro-Par 2025. The simulator is <a href="https://github.com/wave-hpc/wave">open source</a>.
+- date: Feb 2024
+  text: >-
+    The EuroHPC project <strong>EPICURE</strong> started, with INESC TEC as the
+    Portuguese partner.
+- date: 2024
+  text: >-
+    Our review on the decarbonisation of HPC centres was published in
+    <em>Renewable and Sustainable Energy Reviews</em>.

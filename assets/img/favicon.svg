@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Resource Efficiency Group logo">
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#0b2540"/>
+  <g stroke="#7fb3ff" stroke-width="3" stroke-linecap="round"><path d="M22 4v6M32 4v6M42 4v6M22 54v6M32 54v6M42 54v6M4 22h6M4 32h6M4 42h6M54 22h6M54 32h6M54 42h6"/></g>
+  <rect x="14" y="14" width="36" height="36" rx="8" fill="#10365c"/>
+  <path d="M22 41 C22 28 30 21 43 21 C43 34 36 42 23 42 Z" fill="#19c58f"/>
+  <path d="M23 42 L35 29" stroke="#0b2540" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,25 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+eyebrow: Output
+lead: >-
+  Papers, articles and reports by members of the group. Names of group members
+  are in bold.
+---
+<div class="filters" role="toolbar" aria-label="Filter by research line">
+  <button class="filter active" data-filter="all">All</button>
+  {% for r in site.data.research %}<button class="filter f-{{ r.id }}" data-filter="{{ r.id }}">{{ r.title }}</button>{% endfor %}
+</div>
+
+{% assign pubs = site.data.publications | sort: "year" | reverse %}
+{% assign years = pubs | map: "year" | uniq %}
+{% for y in years %}
+<section class="pub-year" data-year="{{ y }}">
+  <h2 class="year">{{ y }}</h2>
+  <ul class="pubs">
+    {% for p in pubs %}{% if p.year == y %}{% include publication.html %}{% endif %}{% endfor %}
+  </ul>
+</section>
+{% endfor %}
+<p class="muted small empty-msg" hidden>No publications in this line yet. Our first papers are in preparation.</p>

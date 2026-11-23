@@ -1,0 +1,73 @@
+# Team data. Fields marked TODO need your input.
+# photo: path under /assets/img/people/ (optional; initials are shown otherwise)
+# lines: research-line ids from _data/research.yml
+
+pi:
+  name: André Martins Pereira
+  role: Group Leader
+  position: >-
+    Department of Informatics, University of Minho · Researcher at INESC TEC
+  photo: ""                     # TODO e.g. /assets/img/people/andre-pereira.jpg
+  email: ""                     # TODO
+  links:
+    orcid: ""                   # TODO
+    scholar: ""                 # TODO
+    github: ""                  # TODO
+  bio: >-
+    André leads the Resource Efficiency Group. His research covers energy and
+    carbon efficiency of supercomputers, memory disaggregation, emerging
+    architectures and the performance engineering of scientific codes. It grew
+    from earlier work on efficient data analysis for the LHC (HEP-Frame). He
+    helped design UMinho's Master in Advanced Computing and has been its Adjunct
+    Director since its first edition. He teaches Advanced Computing Architectures
+    in the Master and parallel programming and computing systems at BSc level. At INESC TEC he contributes to EPICURE, the EuroHPC
+    application-support project.
+  lines: [energy, memory, architectures, science]
+
+phd:
+  - name: PhD Candidate            # TODO: name
+    topic: Thesis topic to be announced   # TODO
+    photo: ""
+    lines: [energy, memory]       # TODO
+
+msc:
+  - name: Tomás Alexandre Torres Pereira
+    topic: A design-space exploration framework for hardware–software co-design of coarse-grained reconfigurable architectures
+    lines: [architectures]
+    photo: ""
+  - name: Diogo Silva
+    topic: Exploring disaggregated memory in HPC systems, with object-level memory disaggregation over MPI
+    lines: [memory]
+    photo: ""
+  - name: MSc Student            # TODO: name
+    topic: Energy consumption management in Arm processors (A64FX and NVIDIA Grace)
+    lines: [energy]
+    photo: ""
+  - name: MSc Student            # TODO: name
+    topic: Carbon-aware job scheduling on the Deucalion supercomputer
+    lines: [energy]
+    photo: ""
+  - name: MSc Student            # TODO: name
+    topic: HPC optimisation of a quantum-photonics simulation workflow (QUANTHOS) on Deucalion
+    lines: [science]
+    photo: ""
+
+alumni:
+  - name: Pedro Miguel Oliveira Carvalho
+    degree: MSc
+    topic: "WAVE: a workload-aware Vessim extension for HPC sustainability simulation"
+    outcome: Published at the PECS 2025 workshop (Euro-Par 2025)
+    now: INESC TEC
+    lines: [energy]
+
+collaborators:
+  - name: Alberto José Proença
+    affiliation: University of Minho
+  - name: António Onofre
+    affiliation: LIP / University of Minho
+  - name: Ariel Guerreiro
+    affiliation: INESC TEC & University of Porto (QUANTHOS PI)
+  - name: Ricardo J. Bessa
+    affiliation: INESC TEC
+  - name: Deucalion operations team
+    affiliation: CNCA — Advanced Computing National Centre

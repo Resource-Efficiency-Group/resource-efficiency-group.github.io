@@ -1,0 +1,21 @@
+- name: WAVE
+  description: >-
+    Workload-Aware Vessim Extension. It co-simulates HPC job scheduling and
+    execution with microgrid energy flows, batteries and grid carbon intensity,
+    and can be configured to model heterogeneous systems such as Deucalion.
+  url: https://github.com/wave-hpc/wave
+  lines: [energy]
+- name: HEP-Frame
+  description: >-
+    A framework for developing and efficiently running pipelined data
+    transformation and filtering in high-energy physics analyses on multicore
+    systems.
+  url: https://doi.org/10.1016/j.cpc.2021.107844
+  lines: [science]
+- name: MPI memory-disaggregation middleware
+  description: >-
+    Object-level remote memory over MPI, with remote memory pools, allocation
+    handles, annotations and cost-based placement. An open-source release is
+    planned.
+  url: ""
+  lines: [memory]

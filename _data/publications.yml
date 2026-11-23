@@ -1,0 +1,107 @@
+# Publications, newest first is not required — pages sort by year.
+# type: journal | conference | workshop | chapter | report | thesis
+# lines: research-line ids (energy, memory, architectures, science)
+# selected: true  -> shown on the home page
+# authors: use the short form; names listed in _config.yml highlight_authors are bolded.
+
+- title: "WAVE: A Workload-Aware Vessim Extension for HPC Sustainability Simulation"
+  authors: [P. M. O. Carvalho, A. M. Pereira]
+  venue: Euro-Par 2025 Workshops (PECS 2025), Lecture Notes in Computer Science, Springer
+  year: 2026
+  type: workshop
+  note: In press
+  doi: ""                         # TODO: add when assigned
+  code: https://github.com/wave-hpc/wave
+  lines: [energy]
+  selected: true
+
+- title: "D5.1 – Training activities report year 1"
+  authors: [M. Gouveia, A. Pereira, A. Emerson]
+  venue: EPICURE project deliverable, Zenodo
+  year: 2025
+  type: report
+  doi: 10.5281/zenodo.21932873
+  lines: []
+
+- title: "A review on the decarbonization of high-performance computing centers"
+  authors: [C. A. Silva, R. Vilaça, A. Pereira, R. J. Bessa]
+  venue: Renewable and Sustainable Energy Reviews, vol. 189, 114019
+  year: 2024
+  type: journal
+  doi: 10.1016/j.rser.2023.114019
+  lines: [energy]
+  selected: true
+
+- title: "Berry: A code for the differentiation of Bloch wavefunctions from DFT calculations"
+  authors: [L. Reascos, F. Carneiro, A. Pereira, N. F. Castro, R. M. Ribeiro]
+  venue: Computer Physics Communications, vol. 295, 108972
+  year: 2024
+  type: journal
+  doi: 10.1016/j.cpc.2023.108972
+  lines: [science]
+
+- title: "HEP-Frame: an efficient tool for big data applications at the LHC"
+  authors: [A. Pereira, A. Onofre, A. Proença]
+  venue: The European Physical Journal Plus, vol. 138, 278
+  year: 2023
+  type: journal
+  doi: 10.1140/epjp/s13360-023-03861-1
+  lines: [science]
+  selected: true
+
+- title: "HEP-Frame: Improving the efficiency of pipelined data transformation & filtering for scientific analyses"
+  authors: [A. Pereira, A. Proença]
+  venue: Computer Physics Communications, vol. 263, 107844
+  year: 2021
+  type: journal
+  doi: 10.1016/j.cpc.2021.107844
+  lines: [science]
+  selected: true
+
+- title: "PRNG-Broker: A High-Performance Broker to Supply Parallel Streams of Pseudorandom Numbers for Large-Scale Simulations"
+  authors: [A. Pereira, A. Proença]
+  venue: "Advances in Parallel & Distributed Processing, and Applications, Transactions on Computational Science and Computational Intelligence, Springer, pp. 167–183"
+  year: 2021
+  type: chapter
+  doi: 10.1007/978-3-030-69984-0_14
+  lines: [science]
+
+- title: "Hilight: a new simulation platform for advanced photonics"
+  authors: [A. Guerreiro, N. A. Silva, J. C. Costa, M. Gomes, R. A. Alves, T. D. Ferreira, I. S. Madureira, A. L. Almeida, A. Pereira]
+  venue: Fourth International Conference on Applications of Optics and Photonics (AOP 2019), Proc. SPIE
+  year: 2019
+  type: conference
+  doi: 10.1117/12.2527441
+  lines: [science]
+
+- title: "Tuning pipelined scientific data analyses for efficient multicore execution"
+  authors: [A. Pereira, A. Onofre, A. Proença]
+  venue: International Conference on High Performance Computing & Simulation (HPCS 2016), IEEE, pp. 751–758
+  year: 2016
+  type: conference
+  doi: 10.1109/hpcsim.2016.7568410
+  lines: [science]
+
+- title: "HEP-Frame: A Software Engineered Framework to Aid the Development and Efficient Multicore Execution of Scientific Code"
+  authors: [A. Pereira, A. Onofre, A. Proença]
+  venue: International Conference on Computational Science and Computational Intelligence (CSCI 2015), IEEE, pp. 615–620
+  year: 2015
+  type: conference
+  doi: 10.1109/csci.2015.42
+  lines: [science]
+
+- title: "Removing Inefficiencies from Scientific Code: The Study of the Higgs Boson Couplings to Top Quarks"
+  authors: [A. Pereira, A. Onofre, A. Proença]
+  venue: Computational Science and Its Applications – ICCSA 2014, Lecture Notes in Computer Science, Springer, pp. 576–591
+  year: 2014
+  type: conference
+  doi: 10.1007/978-3-319-09147-1_42
+  lines: [science]
+
+- title: "Efficient processing of ATLAS events analysis in homogeneous and heterogeneous platforms with accelerator devices"
+  authors: [A. Pereira]
+  venue: MSc dissertation, University of Minho
+  year: 2013
+  type: thesis
+  doi: ""
+  lines: [science]

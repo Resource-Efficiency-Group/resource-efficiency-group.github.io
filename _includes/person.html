@@ -1,0 +1,10 @@
+<article class="person">
+  {% if m.photo != "" and m.photo %}<img class="avatar" src="{{ m.photo | relative_url }}" alt="{{ m.name }}">{% else %}{% assign parts = m.name | split: " " %}<div class="avatar avatar-initials" aria-hidden="true">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</div>{% endif %}
+  <div>
+    <h3>{{ m.name }}</h3>
+    {% if m.degree %}<div class="person-role">{{ m.degree }}{% if m.now %} · now at {{ m.now }}{% endif %}</div>{% endif %}
+    <p class="person-topic">{{ m.topic }}</p>
+    {% if m.outcome %}<p class="muted small">{{ m.outcome }}</p>{% endif %}
+    <div class="tags">{% for l in m.lines %}{% for r in site.data.research %}{% if r.id == l %}<span class="tag tag-{{ r.id }}">{{ r.short }}</span>{% endif %}{% endfor %}{% endfor %}</div>
+  </div>
+</article>

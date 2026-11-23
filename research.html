@@ -1,0 +1,55 @@
+---
+layout: page
+title: Research
+permalink: /research/
+eyebrow: What we work on
+lead: >-
+  We ask how much useful computation a supercomputer delivers per joule, per gram
+  of CO₂ and per byte of provisioned memory, and how system software and
+  architecture can improve each of these ratios. Deucalion is our shared testbed.
+---
+<nav class="line-jump" aria-label="Research lines">
+  {% for r in site.data.research %}<a class="tag tag-{{ r.id }}" href="#{{ r.id }}">{{ r.title }}</a>{% endfor %}
+</nav>
+
+{% for r in site.data.research %}
+<section id="{{ r.id }}" class="research-line line-{{ r.id }}">
+  <div class="rl-head">
+    <div class="line-icon">{% include icon.html name=r.icon %}</div>
+    <div>
+      <h2>{{ r.title }}</h2>
+      <p class="lead small-lead">{{ r.lead }}</p>
+    </div>
+  </div>
+  <p>{{ r.summary }}</p>
+  <div class="topics">
+    {% for t in r.topics %}
+    <div class="topic"><h3>{{ t.title }}</h3><p>{{ t.text }}</p></div>
+    {% endfor %}
+  </div>
+  <div class="kw">{% for k in r.keywords %}<span>{{ k }}</span>{% endfor %}</div>
+
+  <div class="rl-foot">
+    <div>
+      <h4>People</h4>
+      <ul class="plain">
+        {% for m in site.data.team.phd %}{% if m.lines contains r.id %}<li>{{ m.name }} <span class="muted">· PhD</span></li>{% endif %}{% endfor %}
+        {% for m in site.data.team.msc %}{% if m.lines contains r.id %}<li>{{ m.name }} <span class="muted">· MSc</span></li>{% endif %}{% endfor %}
+        <li>{{ site.data.team.pi.name }} <span class="muted">· Group leader</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Publications</h4>
+      <ul class="plain">
+        {% assign n = 0 %}
+        {% assign sorted = site.data.publications | sort: "year" | reverse %}
+        {% for p in sorted %}{% if p.lines contains r.id and n < 4 %}{% assign n = n | plus: 1 %}
+        <li>{% if p.doi != "" and p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %} <span class="muted">({{ p.year }})</span></li>
+        {% endif %}{% endfor %}
+        {% if n == 0 %}<li class="muted">First papers in preparation.</li>{% endif %}
+      </ul>
+      <a class="more-link" href="{{ '/publications/' | relative_url }}?line={{ r.id }}">All {{ r.short | downcase }} publications →</a>
+    </div>
+  </div>
+</section>
+{% endfor %}
