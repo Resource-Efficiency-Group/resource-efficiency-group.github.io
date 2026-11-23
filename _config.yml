@@ -13,7 +13,7 @@ description: >-
 
 # Deployment. For a repository named <account>.github.io keep baseurl empty.
 # For a project repository (e.g. github.com/<account>/website) set baseurl: "/website".
-url: "https://resource-efficiency-group.github.io"   # TODO: replace with your account
+url: "https://reg.github.io"   # TODO: replace with your account
 baseurl: ""
 
 # Contact and links (leave empty to hide)
