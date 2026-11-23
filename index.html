@@ -2,7 +2,7 @@
 layout: default
 ---
 <section class="hero">
-  <div class="wrap hero-grid">
+  <div class="wrap hero-inner">
     <div>
       <p class="eyebrow">HPC research · University of Minho &amp; INESC TEC</p>
       <h1>Resource Efficiency Group</h1>
@@ -17,13 +17,6 @@ layout: default
         <a class="btn btn-ghost" href="{{ '/publications/' | relative_url }}">Publications</a>
         <a class="btn btn-ghost" href="{{ '/team/' | relative_url }}#join">Join us</a>
       </div>
-    </div>
-    <div class="hero-card" aria-hidden="true">
-      <div class="hero-card-title">Testbed: Deucalion (EuroHPC)</div>
-      <div class="partition"><span class="dot c-bg-energy"></span><b>Arm</b> Fujitsu A64FX · HBM2</div>
-      <div class="partition"><span class="dot c-bg-memory"></span><b>x86</b> AMD EPYC</div>
-      <div class="partition"><span class="dot c-bg-architectures"></span><b>GPU</b> NVIDIA A100</div>
-      <p class="muted small">One production system, three architectures, studied together with its operations team.</p>
     </div>
   </div>
 </section>
@@ -48,34 +41,24 @@ layout: default
 <section class="band">
   <div class="wrap section">
     <div class="section-head">
-      <h2>One agenda, connected lines</h2>
-      <p class="muted">Each line is useful on its own and also feeds the others. Our energy work runs from measurement to models to scheduling decisions. Memory disaggregation frees nodes that can then be powered down. New architectures lower the energy of each operation, and scientific codes provide the workloads we test on.</p>
+      <h2>One goal, four connected lines</h2>
+      <p class="muted">Everything we do serves one goal: resource efficiency in HPC systems. Each of the four lines pursues that goal on its own, and they also feed each other. Memory disaggregation lets existing systems take on workloads larger than a single node's memory, which extends the useful life of the hardware. New architectures lower the energy of each operation. Scientific codes provide the kernels and workloads we evaluate on.</p>
     </div>
     <figure class="figure">{% include synergy.svg %}</figure>
   </div>
 </section>
 
-<section class="wrap section two-col">
-  <div>
-    <div class="section-head"><h2>Selected publications</h2></div>
-    <ul class="pubs compact">
-      {% assign selected = site.data.publications | sort: "year" | reverse %}
-      {% for p in selected %}{% if p.selected %}{% include publication.html %}{% endif %}{% endfor %}
+<section class="wrap section">
+  <div class="section-head"><h2>Selected publications</h2></div>
+  <ul class="pubs compact">
+    {% assign selected = site.data.publications | sort: "year" | reverse %}
+    {% for p in selected %}{% if p.selected %}{% include publication.html %}{% endif %}{% endfor %}
+  </ul>
+  <a class="more-link" href="{{ '/publications/' | relative_url }}">All publications →</a>
+  <div class="partners">
+    <h3 class="small-caps">Affiliations &amp; partners</h3>
+    <ul class="partner-list">
+      <li>University of Minho</li><li>INESC TEC</li><li>CNCA</li><li>EuroHPC JU</li>
     </ul>
-    <a class="more-link" href="{{ '/publications/' | relative_url }}">All publications →</a>
-  </div>
-  <div>
-    <div class="section-head"><h2>News</h2></div>
-    <ul class="news">
-      {% for n in site.data.news limit: 5 %}
-      <li><span class="news-date">{{ n.date }}</span><span>{{ n.text }}</span></li>
-      {% endfor %}
-    </ul>
-    <div class="partners">
-      <h3 class="small-caps">Affiliations &amp; partners</h3>
-      <ul class="partner-list">
-        <li>University of Minho</li><li>INESC TEC</li><li>CNCA · Deucalion</li><li>EuroHPC JU</li>
-      </ul>
-    </div>
   </div>
 </section>

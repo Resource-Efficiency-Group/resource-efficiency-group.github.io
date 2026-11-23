@@ -31,10 +31,10 @@ Local preview, which needs Ruby:
 | `_data/research.yml` | The four research lines (title, summary, topics, keywords). Their `id`s tag everything else |
 | `_data/team.yml` | Group leader, PhD candidates, MSc students, alumni, collaborators |
 | `_data/publications.yml` | Publications. `selected: true` puts one on the home page |
-| `_data/projects.yml`, `_data/software.yml` | Projects page |
-| `_data/news.yml` | News on the home page (newest first; the first five are shown) |
+| `_data/projects.yml` | Projects page |
+| `_data/tools.yml` | Tools page (WAVE, HEP-Frame, …): description, features, links, how to cite |
 | `_data/navigation.yml` | Top menu |
-| `index.html`, `research.html`, `team.html`, `publications.html`, `projects.html` | Page templates |
+| `index.html`, `research.html`, `tools.html`, `team.html`, `publications.html`, `projects.html` | Page templates |
 | `_includes/synergy.svg` | The "how the lines connect" figure on the home page |
 | `assets/css/style.css` | All styling; line colours are set at the top (`--energy`, `--memory`, …) |
 | `assets/img/people/` | Put photos here and reference them from `team.yml` (square, at least 300 px) |
@@ -51,8 +51,8 @@ can be linked directly, e.g. `/publications/?line=energy`.
   the PhD candidate's name and topic; the names of the three MSc students on Arm
   energy, carbon-aware scheduling and QUANTHOS; and the sixth MSc student, since
   the group has six but only five theses are listed.
-- `_data/publications.yml`: the WAVE DOI once Springer assigns it; your PhD thesis
-  and any papers missing from the list (see the note below).
+- `_data/publications.yml`: the WAVE DOI once Springer assigns it (also in `tools.yml`), and any
+  papers missing from the list (see the note below).
 - `_data/projects.yml`: the QUANTHOS period and website; the EUMaster4HPC consortium URL.
 - Optional: university and INESC TEC logos in the "Affiliations & partners" box
   (check each institution's brand guidelines first).

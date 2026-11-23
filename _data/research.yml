@@ -44,14 +44,16 @@
   short: Memory
   icon: memory
   lead: >-
-    HPC nodes are sized for the most demanding jobs, yet most jobs use only a
-    fraction of the memory they are given.
+    Many HPC systems in production, older ones in particular, have nodes with
+    less memory than today's workloads need.
   summary: >-
-    Idle memory on one node cannot help a memory-hungry job on another node, so
-    that job is spread over more nodes than its computation needs. Hardware
-    memory pooling over CXL is emerging, but it needs new hardware. We pursue
-    <em>software, object-level memory disaggregation over MPI</em>, which runs
-    on existing interconnects and can be deployed on production systems today.
+    When an application's data does not fit in the memory of a single node, it
+    cannot run on that system without being rewritten. We pursue
+    <em>application-level memory disaggregation over MPI</em>. An application
+    uses the memory of several nodes of an existing system, and each of its data
+    structures is placed in the most suitable memory pool. The approach runs on
+    existing interconnects and needs no new hardware such as CXL memory pooling.
+    It lets older systems process larger workloads efficiently.
   topics:
     - title: Object-level disaggregation middleware
       text: >-
@@ -63,17 +65,16 @@
     - title: Placement policies and cost models
       text: >-
         We characterise local and remote access costs, transfer granularity and
-        workload behaviour, and investigate whether application characteristics
-        and runtime feedback can guide data placement and migration better than
-        static policies.
-    - title: Fewer nodes, less energy
+        workload behaviour. We then study whether application characteristics
+        and runtime feedback can decide which data structures go to which memory
+        pool, and when to migrate them, better than static policies.
+    - title: Longer life for existing hardware
       text: >-
-        Disaggregation lets memory-bound jobs run on fewer nodes, so more nodes
-        can enter low-power states. The need is greatest on capacity-limited
-        nodes such as the A64FX, which has 32 GiB of HBM2 and no way to add
-        memory. A scheduler that knows which nodes can donate memory links this
-        line to our energy work.
-  keywords: [MPI, remote memory, memory pooling, CXL, data placement, tiering, HBM]
+        Disaggregation lets systems whose nodes have limited memory run workloads
+        that would otherwise need new machines, which extends the useful life of
+        the hardware. The need is greatest on capacity-limited nodes such as the
+        A64FX, which has 32 GiB of HBM2 per node and no way to add memory.
+  keywords: [MPI, remote memory, memory pooling, data placement, tiering, HBM, hardware lifespan]
 
 - id: architectures
   title: Emerging Architectures

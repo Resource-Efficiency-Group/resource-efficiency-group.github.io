@@ -1,0 +1,71 @@
+# Tools developed by the group. Shown on /tools/.
+# links: label + url pairs, in display order. status: released | in development
+
+- name: WAVE
+  tagline: Workload-Aware Vessim Extension for HPC sustainability simulation
+  status: released
+  language: Python (extends the Vessim co-simulator)
+  lines: [energy]
+  description: >-
+    WAVE adds HPC job management and execution to Vessim's microgrid simulator,
+    so that job scheduling and facility-level energy management can be studied
+    together. The compute demand comes from the simulated workload execution,
+    and responds to renewable availability, battery state of charge and grid
+    carbon intensity.
+  features:
+    - Instruction-based execution progress of HPC jobs
+    - Per-node power models for heterogeneous partitions (CPU, Arm, GPU) and facility PUE
+    - Green and grid energy sources, batteries and carbon-footprint accounting
+    - Pluggable job-scheduling and energy-management policies
+  links:
+    - label: Repository
+      url: https://github.com/wave-hpc/wave
+  cite: >-
+    P. M. O. Carvalho and A. M. Pereira, "WAVE: A Workload-Aware Vessim Extension
+    for HPC Sustainability Simulation," Euro-Par 2025 Workshops (PECS 2025),
+    LNCS, Springer, in press.
+
+- name: HEP-Frame
+  tagline: Development aid and efficient execution engine for pipelined scientific data analyses
+  status: released
+  language: C++ (ROOT input and output)
+  lines: [science]
+  description: >-
+    HEP-Frame is a C++ package for analysing data sets with very large numbers
+    of events, such as those from the LHC at CERN. It is designed for domain
+    scientists. It evaluates the computing resources, generates a code skeleton
+    for a new analysis, and at run time exploits the parallelism in both the
+    analysis and the hardware. It targets high-performance servers and small
+    clusters.
+  features:
+    - Generated analysis skeletons with access to structured (ROOT) data
+    - Adaptive multi-layer scheduler that reorders pipelined filtering tasks
+    - Performance portability across multicore and heterogeneous platforms
+    - Results stored in user-defined objects together with the input data
+  links:
+    - label: Repository
+      url: https://bitbucket.org/ampereira/hep-frame/
+    - label: CPC program archive
+      url: https://doi.org/10.17632/m2jwxshtfz.1
+    - label: Paper (CPC 2021)
+      url: https://doi.org/10.1016/j.cpc.2021.107844
+    - label: Paper (EPJ Plus 2023)
+      url: https://doi.org/10.1140/epjp/s13360-023-03861-1
+  cite: >-
+    A. Pereira and A. Proença, "HEP-Frame: Improving the efficiency of pipelined
+    data transformation & filtering for scientific analyses," Computer Physics
+    Communications 263, 107844 (2021).
+
+- name: MPI memory-disaggregation middleware
+  tagline: Application-level remote memory over MPI
+  status: in development
+  language: C/C++, MPI
+  lines: [memory]
+  description: >-
+    The middleware lets an application use the memory of several nodes and
+    place each data structure in the most suitable memory pool. It provides
+    remote memory pools, allocation handles, annotations and cost-based
+    placement. An open-source release is planned.
+  features: []
+  links: []
+  cite: ""

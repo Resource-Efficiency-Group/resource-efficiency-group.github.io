@@ -44,8 +44,7 @@
     Deucalion is installed on UMinho's Azurém campus. It combines Fujitsu A64FX
     Arm nodes with on-package HBM2, AMD EPYC x86 nodes and NVIDIA A100 GPU
     nodes. Several of our research topics come from discussions with its
-    operations team. Telemetry, job traces and system access make it the common
-    testbed for all research lines.
+    operations team.
   role: >-
     Study of the system's energy behaviour, scheduling, memory use and
     application performance, through MSc dissertations proposed with the

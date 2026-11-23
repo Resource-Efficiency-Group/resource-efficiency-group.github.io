@@ -1,0 +1,30 @@
+---
+layout: page
+title: Tools
+permalink: /tools/
+eyebrow: Software
+lead: >-
+  Open software developed in the group. You are welcome to use it. If it helps
+  your research, please cite the paper listed with each tool.
+---
+<div class="tools">
+  {% for t in site.data.tools %}
+  <article class="tool status-{{ t.status | replace: ' ', '-' }}" id="{{ t.name | slugify }}">
+    <header>
+      <div>
+        <h2>{{ t.name }}</h2>
+        <p class="muted">{{ t.tagline }}</p>
+      </div>
+      <span class="status">{{ t.status }}</span>
+    </header>
+    <dl class="meta">
+      <div><dt>Language</dt><dd>{{ t.language }}</dd></div>
+      <div><dt>Research line</dt><dd>{% for l in t.lines %}{% for r in site.data.research %}{% if r.id == l %}<a class="tag tag-{{ r.id }}" href="{{ '/research/' | relative_url }}#{{ r.id }}">{{ r.title }}</a>{% endif %}{% endfor %}{% endfor %}</dd></div>
+    </dl>
+    <p>{{ t.description }}</p>
+    {% if t.features.size > 0 %}<ul class="features">{% for f in t.features %}<li>{{ f }}</li>{% endfor %}</ul>{% endif %}
+    {% if t.links.size > 0 %}<div class="tool-links">{% for k in t.links %}<a class="{% if forloop.first %}btn btn-primary{% else %}chip-link{% endif %}" href="{{ k.url }}">{{ k.label }}</a>{% endfor %}</div>{% endif %}
+    {% if t.cite != "" %}<p class="cite"><b>How to cite.</b> {{ t.cite }}</p>{% endif %}
+  </article>
+  {% endfor %}
+</div>

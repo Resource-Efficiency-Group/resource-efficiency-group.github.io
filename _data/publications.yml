@@ -98,6 +98,14 @@
   doi: 10.1007/978-3-319-09147-1_42
   lines: [science]
 
+- title: "HEP-Frame – A Development Aid and Efficient Execution Engine where a Multi-layer Scheduler Adaptively Orders Pipelined Data Stream Application"
+  authors: [A. Pereira]
+  venue: PhD thesis, University of Minho
+  year: 2019
+  type: thesis
+  doi: ""
+  lines: [science]
+
 - title: "Efficient processing of ATLAS events analysis in homogeneous and heterogeneous platforms with accelerator devices"
   authors: [A. Pereira]
   venue: MSc dissertation, University of Minho

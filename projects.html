@@ -4,8 +4,7 @@ title: Projects
 permalink: /projects/
 eyebrow: Involvement
 lead: >-
-  Funded projects, infrastructures and programmes we take part in, and the open
-  software we develop.
+  Funded projects, infrastructures and programmes we take part in.
 ---
 <div class="projects">
   {% for pr in site.data.projects %}
@@ -27,14 +26,4 @@ lead: >-
   </article>
   {% endfor %}
 </div>
-
-<h2 class="group-h">Software</h2>
-<div class="software">
-  {% for s in site.data.software %}
-  <article class="sw">
-    <h3>{% if s.url != "" %}<a href="{{ s.url }}">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}</h3>
-    <p>{{ s.description }}</p>
-    <div class="tags">{% for l in s.lines %}{% for r in site.data.research %}{% if r.id == l %}<span class="tag tag-{{ r.id }}">{{ r.short }}</span>{% endif %}{% endfor %}{% endfor %}</div>
-  </article>
-  {% endfor %}
-</div>
+<p class="muted">The software we develop is listed on the <a href="{{ '/tools/' | relative_url }}">Tools</a> page.</p>
