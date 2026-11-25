@@ -50,6 +50,10 @@ msc:
     topic: HPC optimisation of a quantum-photonics simulation workflow (QUANTHOS) on Deucalion
     lines: [energy, science]
     photo: ""
+  - name: Gabriel Paiva
+    topic: Applying Typing Linear Algebra to NVIDIA GPUs
+    lines: [architectures]
+    photo: "
   - name: Nuno Gomes
     topic: Simulating topologies for disaggregated memory in HPC systems
     lines: [memory]
@@ -66,7 +70,7 @@ alumni:
   - name: Carolina Gomes
     degree: MSc
     topic: "Optimising the Berry suite for DFS"
-    outcome: Published at the Computational Physics Communications (COMPHY)
+    outcome: Published in Computational Physics Communications (COMPHY)
     now: INESC TEC
     lines: [energy, science]
 
