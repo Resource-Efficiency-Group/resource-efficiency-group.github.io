@@ -15,14 +15,6 @@
   lines: [energy]
   selected: true
 
-- title: "D5.1 – Training activities report year 1"
-  authors: [M. Gouveia, A. Pereira, A. Emerson]
-  venue: EPICURE project deliverable, Zenodo
-  year: 2025
-  type: report
-  doi: 10.5281/zenodo.21932873
-  lines: []
-
 - title: "A review on the decarbonization of high-performance computing centers"
   authors: [C. A. Silva, R. Vilaça, A. Pereira, R. J. Bessa]
   venue: Renewable and Sustainable Energy Reviews, vol. 189, 114019
