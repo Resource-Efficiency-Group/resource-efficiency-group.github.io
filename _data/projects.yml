@@ -85,27 +85,10 @@
       url: https://www.blueoasis.tech/projects/exaSIMPLE-leveraging-machine-learning-for-exascale-CFD
   lines: [science]
 
-- name: Deucalion living laboratory
-  full_name: Research and dissertations in cooperation with CNCA
-  status: infrastructure
-  period: Ongoing
-  funding: In cooperation with CNCA, the operator of the EuroHPC supercomputer Deucalion
-  url: ""
-  summary: >-
-    Deucalion is installed on UMinho's Azurém campus. It combines Fujitsu A64FX
-    Arm nodes with on-package HBM2, AMD EPYC x86 nodes and NVIDIA A100 GPU
-    nodes. Several of our research topics come from discussions with its
-    operations team.
-  role: >-
-    Study of the system's energy behaviour, scheduling, memory use and
-    application performance, through MSc dissertations proposed with the
-    operations team.
-  lines: [energy, memory, architectures, science]
-
 - name: EUMaster4HPC-2
   full_name: European Master for High Performance Computing
   status: education
-  period: Ongoing
+  period: 2026 – 2032
   funding: EuroHPC Joint Undertaking
   url: ""                       # TODO: consortium website
   summary: >-
@@ -119,3 +102,18 @@
     Students from the programme carry out MSc dissertations in the group.
   lines: []
 
+- name: EUMaster4HPC
+  full_name: European Master for High Performance Computing (first phase)
+  status: completed
+  period: Jan 2022 – Dec 2025
+  funding: EuroHPC Joint Undertaking · Horizon 2020
+  url: ""
+  summary: >-
+    The first pan-European Master's programme in HPC was coordinated by the
+    University of Luxembourg and had a budget of €7 million. Eight awarding
+    universities shared a common curriculum, and the first cohort of students
+    started in autumn 2022.
+  role: >-
+    The University of Minho took part as an observer in the first-phase
+    consortium, before joining EUMaster4HPC-2 as a Participating University.
+  lines: []
