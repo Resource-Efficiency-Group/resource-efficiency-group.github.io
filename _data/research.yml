@@ -1,142 +1,66 @@
-# One entry per research line. "id" is used to tag publications, people and projects.
+# One entry per research line. "id" tags publications, people, projects and tools.
+# figure: illustration under /assets/img/research/
 - id: energy
   title: Energy & Carbon Efficiency
   short: Energy
   icon: bolt
+  figure: /assets/img/research/energy.svg
   lead: >-
-    How much useful computation does a supercomputer deliver per joule and per
-    gram of CO₂, and how can system software improve both ratios?
-  summary: >-
-    We follow a <em>measure → model → decide</em> chain. We measure the power
-    controls of modern processors, turn the measurements into models of
-    applications and of the whole machine, and use those models to make
-    scheduling decisions that follow the availability of renewable energy.
+    More useful computation per joule and per gram of CO₂, from processor power
+    controls to the scheduling of whole machines.
   topics:
-    - title: Power controls on Arm processors
-      text: >-
-        The Fujitsu A64FX offers controls that most x86 processors lack: an eco
-        mode that switches off floating-point pipelines, a power-retention state
-        for idle cores, and frequency settings. NVIDIA Grace adds frequency
-        scaling and core hotplug. We characterise these controls on HPC kernels
-        and build per-application power and performance models that a scheduler
-        can query.
-    - title: Energy modelling of HPC systems
-      text: >-
-        WAVE, our workload-aware extension of the Vessim co-simulator, couples
-        HPC job execution with microgrid energy flows. It models per-node idle
-        and dynamic power for each partition, facility overhead (PUE), batteries,
-        and renewable and grid supply. A WAVE model of Deucalion showed that, with
-        every node always on, idle power accounts for most of the IT energy. This
-        is why we also study power states, and not only moving jobs in time.
-    - title: Carbon-aware job scheduling
-      text: >-
-        We design schedulers that fit the energy demand of a heterogeneous
-        machine to an hourly green-energy budget. Our current design has two
-        levels: a top-level allocator distributes the daily budget, and one
-        scheduler per partition and queue orders its jobs to stay within its
-        allocation. We evaluate the schedulers with hydro, wind and solar supply
-        profiles, and ask how accurate runtime and energy predictions must be
-        before carbon-aware scheduling pays off.
-  keywords: [A64FX, NVIDIA Grace, DVFS, power modelling, WAVE, Vessim, carbon-aware scheduling, digital twins]
+    - title: Arm power controls
+      text: A64FX eco mode, retention and DVFS; NVIDIA Grace frequency scaling and core hotplug.
+    - title: System energy modelling
+      text: WAVE simulates HPC jobs together with node power, PUE, storage and grid supply.
+    - title: Carbon-aware scheduling
+      text: Fitting the energy of jobs to hourly green-energy budgets.
 
 - id: memory
   title: Memory Disaggregation
   short: Memory
   icon: memory
+  figure: /assets/img/research/memory.svg
   lead: >-
-    Many HPC systems in production, older ones in particular, have nodes with
-    less memory than today's workloads need.
-  summary: >-
-    When an application's data does not fit in the memory of a single node, it
-    cannot run on that system without being rewritten. We pursue
-    <em>application-level memory disaggregation over MPI</em>. An application
-    uses the memory of several nodes of an existing system, and each of its data
-    structures is placed in the most suitable memory pool. The approach runs on
-    existing interconnects and needs no new hardware such as CXL memory pooling.
-    It lets older systems process larger workloads efficiently.
+    Using the memory of several nodes so that existing systems can process
+    workloads that do not fit in a single node, which extends the life of the
+    hardware.
   topics:
-    - title: Object-level disaggregation middleware
-      text: >-
-        A middleware layer lets an application place selected data objects in
-        the memory of other nodes and access them through MPI. It provides
-        remote memory pools, allocation handles and application annotations. It
-        is being extended with caching, memory tiering, prefetching and
-        asynchronous communication.
-    - title: Placement policies and cost models
-      text: >-
-        We characterise local and remote access costs, transfer granularity and
-        workload behaviour. We then study whether application characteristics
-        and runtime feedback can decide which data structures go to which memory
-        pool, and when to migrate them, better than static policies.
-    - title: Longer life for existing hardware
-      text: >-
-        Disaggregation lets systems whose nodes have limited memory run workloads
-        that would otherwise need new machines, which extends the useful life of
-        the hardware. The need is greatest on capacity-limited nodes such as the
-        A64FX, which has 32 GiB of HBM2 per node and no way to add memory.
-  keywords: [MPI, remote memory, memory pooling, data placement, tiering, HBM, hardware lifespan]
+    - title: Remote memory over MPI
+      text: Middleware that places an application's data objects in the memory of other nodes.
+    - title: Application-level placement
+      text: Cost models and policies that put each data structure in the most suitable memory pool.
+    - title: Longer hardware life
+      text: Capacity-limited nodes, such as the 32 GiB A64FX, can take on larger problems.
 
 - id: architectures
   title: Emerging Architectures
   short: Architectures
   icon: chip
+  figure: /assets/img/research/architectures.svg
   lead: >-
-    Energy per operation is ultimately set by the architecture. Spatial and
-    reconfigurable designs avoid much of the energy spent on instruction fetch
-    and data movement.
-  summary: >-
-    We study which architectures fit which HPC workloads, from cross-architecture
-    characterisation of Arm, x86 and GPU nodes to the design-space exploration
-    of <em>coarse-grained reconfigurable arrays (CGRAs)</em> for HPC kernels.
+    Matching HPC workloads to the architectures that run them with the least
+    energy per operation.
   topics:
-    - title: Design-space exploration of CGRAs
-      text: >-
-        We build a framework that maps a grid of dataflow graphs onto a pool of
-        CGRA architectures with open toolchains, learns which graph and
-        architecture features predict a good match, and refines the chosen
-        architecture with Bayesian optimisation and learned surrogate models.
-    - title: CGRAs for HPC kernels
-      text: >-
-        Open CGRA toolchains mostly target edge and ultra-low-power workloads. We
-        evaluate HPC kernels such as stencils, sparse operations and FP64
-        arithmetic, which is a less explored setting.
-    - title: Cross-architecture characterisation
-      text: >-
-        We use measured rooflines and portable implementations (OpenMP, CUDA,
-        SYCL) to compare A64FX, AMD EPYC and NVIDIA A100 nodes on the same codes.
-        These studies inform both our research and our teaching.
-  keywords: [CGRA, dataflow, design-space exploration, Bayesian optimisation, GNN surrogates, roofline]
+    - title: CGRA design-space exploration
+      text: Mapping dataflow graphs onto candidate arrays, refined with Bayesian optimisation.
+    - title: HPC kernels on CGRAs
+      text: Stencils, sparse operations and FP64, beyond the usual edge workloads.
+    - title: Cross-architecture studies
+      text: Measured rooflines and portable code on Arm, x86 and GPU nodes.
 
 - id: science
   title: Scientific Computing
   short: Science
   icon: atom
+  figure: /assets/img/research/science.svg
   lead: >-
-    Efficiency research matters when it reaches real science codes. We work with
-    physicists and other domain scientists to make their workflows faster and
-    leaner on supercomputers.
-  summary: >-
-    This line applies the group's methods to production scientific software.
-    It also gives our energy and memory studies realistic workloads instead of
-    synthetic benchmarks. Past and current work covers high-energy physics,
-    condensed-matter physics and quantum photonics.
+    Applying the research from our other lines to real scientific code, so that
+    domain scientists get faster and more efficient applications.
   topics:
-    - title: High-energy physics data analysis
-      text: >-
-        HEP-Frame is a framework for developing and efficiently running pipelined
-        data transformation and filtering in LHC (ATLAS) analyses on multicore
-        and many-core systems. PRNG-Broker supplies parallel streams of
-        pseudorandom numbers to large-scale simulations.
-    - title: Quantum photonics workflows
-      text: >-
-        Together with the FCT project QUANTHOS, we optimise a quantum-transport
-        simulation workflow, based on Kwant, for the x86 and Arm partitions of
-        Deucalion. The work covers task reordering, parallelism settings and
-        HPC-friendly I/O, and the optimisations must keep working as the physics
-        code evolves.
-    - title: Materials and photonics codes
-      text: >-
-        We contribute HPC expertise to scientific codes such as Berry, which
-        differentiates Bloch wavefunctions from DFT calculations, and to the
-        Hilight photonics simulation platform.
-  keywords: [HEP-Frame, LHC, Kwant, QUANTHOS, DFT, workflows, performance engineering]
+    - title: High-energy physics
+      text: HEP-Frame, efficient pipelined analysis of LHC data.
+    - title: Quantum photonics
+      text: Optimising the QUANTHOS simulation workflow on Arm and x86 nodes.
+    - title: Materials science
+      text: HPC support for DFT post-processing codes such as Berry.

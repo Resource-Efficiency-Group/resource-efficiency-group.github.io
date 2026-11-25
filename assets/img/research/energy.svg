@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Jobs scheduled under a green-energy supply curve" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+  <rect width="400" height="260" rx="20" fill="#e7f7f0"/>
+  <g stroke="#f5b301" stroke-width="2.5" stroke-linecap="round">
+    <path d="M58 30v-8M58 70v8M38 50h-8M78 50h8M44 36l-6-6M72 64l6 6M44 64l-6 6M72 36l6-6"/>
+  </g>
+  <circle cx="58" cy="50" r="13" fill="#f5b301"/>
+  <path d="M30 212 C105 212 128 72 200 72 C272 72 295 212 370 212 Z" fill="#0e9f6e" fill-opacity=".14" stroke="#0e9f6e" stroke-width="2.5"/>
+  <text x="270" y="78" font-size="12" font-weight="600" fill="#0b7a55">green-energy budget</text>
+  <g>
+    <rect x="112" y="186" width="34" height="26" rx="4" fill="#7fd3b0"/>
+    <rect x="150" y="150" width="40" height="62" rx="4" fill="#0e9f6e"/>
+    <rect x="194" y="112" width="34" height="100" rx="4" fill="#0b7a55"/>
+    <rect x="232" y="150" width="42" height="62" rx="4" fill="#0e9f6e"/>
+    <rect x="278" y="184" width="32" height="28" rx="4" fill="#7fd3b0"/>
+  </g>
+  <text x="211" y="166" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">job</text>
+  <line x1="30" y1="212" x2="370" y2="212" stroke="#0f1b2d" stroke-opacity=".35" stroke-width="1.5"/>
+  <g font-size="11" fill="#55657a" text-anchor="middle"><text x="30" y="232">0 h</text><text x="200" y="232">12 h</text><text x="370" y="232">24 h</text></g>
+  <g font-size="11.5" font-weight="700" fill="#0b7a55">
+    <rect x="118" y="24" width="72" height="24" rx="12" fill="#fff"/><text x="154" y="40" text-anchor="middle">measure</text>
+    <rect x="212" y="24" width="60" height="24" rx="12" fill="#fff"/><text x="242" y="40" text-anchor="middle">model</text>
+    <rect x="294" y="24" width="64" height="24" rx="12" fill="#fff"/><text x="326" y="40" text-anchor="middle">decide</text>
+  </g>
+  <g stroke="#0e9f6e" stroke-width="2" fill="none"><path d="M192 36h14M274 36h14"/></g>
+  <g fill="#0e9f6e"><path d="M206 31l6 5-6 5z"/><path d="M288 31l6 5-6 5z"/></g>
+</svg>

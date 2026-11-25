@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="One application using memory pools on three nodes over MPI" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+  <rect width="400" height="260" rx="20" fill="#e8f0fe"/>
+  <rect x="26" y="70" width="104" height="140" rx="12" fill="#fff" stroke="#c7d6f5" stroke-width="1.5"/>
+  <text x="78" y="92" font-size="12" font-weight="700" fill="#1e3a8a" text-anchor="middle">Node 0</text>
+  <rect x="60" y="102" width="36" height="28" rx="5" fill="#2563eb"/>
+  <text x="78" y="121" font-size="10.5" font-weight="700" fill="#fff" text-anchor="middle">CPU</text>
+  <rect x="38" y="142" width="80" height="54" rx="6" fill="#eef3fd" stroke="#c7d6f5"/>
+  <text x="78" y="207" font-size="9.5" fill="#6b7fae" text-anchor="middle">memory pool</text>
+  <rect x="44" y="152" width="20" height="34" rx="3" fill="#2563eb"/>
+  <text x="54" y="174" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">A</text>
+  <rect x="68" y="152" width="20" height="34" rx="3" fill="#1d4ed8"/>
+  <text x="78" y="174" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">B</text>
+  <rect x="92" y="152" width="20" height="34" rx="3" fill="#3b82f6"/>
+  <text x="102" y="174" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">C</text>
+  <rect x="148" y="70" width="104" height="140" rx="12" fill="#fff" stroke="#c7d6f5" stroke-width="1.5"/>
+  <text x="200" y="92" font-size="12" font-weight="700" fill="#1e3a8a" text-anchor="middle">Node 1</text>
+  <rect x="182" y="102" width="36" height="28" rx="5" fill="#dbe5fb"/>
+  <text x="200" y="121" font-size="10.5" font-weight="700" fill="#6b7fae" text-anchor="middle">CPU</text>
+  <rect x="160" y="142" width="80" height="54" rx="6" fill="#eef3fd" stroke="#c7d6f5"/>
+  <text x="200" y="207" font-size="9.5" fill="#6b7fae" text-anchor="middle">memory pool</text>
+  <rect x="166" y="152" width="20" height="34" rx="3" fill="#60a5fa"/>
+  <text x="176" y="174" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">D</text>
+  <rect x="190" y="152" width="20" height="34" rx="3" fill="#93c5fd"/>
+  <text x="200" y="174" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">E</text>
+  <rect x="214" y="152" width="20" height="34" rx="3" fill="#dbe5fb"/>
+  <rect x="270" y="70" width="104" height="140" rx="12" fill="#fff" stroke="#c7d6f5" stroke-width="1.5"/>
+  <text x="322" y="92" font-size="12" font-weight="700" fill="#1e3a8a" text-anchor="middle">Node 2</text>
+  <rect x="304" y="102" width="36" height="28" rx="5" fill="#dbe5fb"/>
+  <text x="322" y="121" font-size="10.5" font-weight="700" fill="#6b7fae" text-anchor="middle">CPU</text>
+  <rect x="282" y="142" width="80" height="54" rx="6" fill="#eef3fd" stroke="#c7d6f5"/>
+  <text x="322" y="207" font-size="9.5" fill="#6b7fae" text-anchor="middle">memory pool</text>
+  <rect x="288" y="152" width="20" height="34" rx="3" fill="#93c5fd"/>
+  <text x="298" y="174" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">F</text>
+  <rect x="312" y="152" width="20" height="34" rx="3" fill="#dbe5fb"/>
+  <rect x="336" y="152" width="20" height="34" rx="3" fill="#dbe5fb"/>
+  <g fill="none" stroke="#2563eb" stroke-width="2"><path d="M96 66 C120 30 176 30 200 66"/><path d="M90 66 C140 8 268 8 322 66"/></g>
+  <g fill="#2563eb"><path d="M196 60l7 8 2-10z"/><path d="M318 60l7 8 2-10z"/></g>
+  <rect x="160" y="14" width="80" height="22" rx="11" fill="#2563eb"/><text x="200" y="29" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle">MPI</text>
+  <text x="200" y="240" font-size="12" font-weight="600" fill="#1e3a8a" text-anchor="middle">one application, data placed in the memory of three nodes</text>
+</svg>

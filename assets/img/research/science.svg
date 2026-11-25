@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Energy, memory and architecture methods applied to scientific code" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+  <rect width="400" height="260" rx="20" fill="#fdf3e4"/>
+  <g font-size="11.5" font-weight="700">
+    <rect x="22" y="52" width="112" height="30" rx="15" fill="#fff" stroke="#0e9f6e" stroke-width="1.5"/><circle cx="40" cy="67" r="6" fill="#0e9f6e"/><text x="52" y="71" fill="#0b7a55">Energy</text>
+    <rect x="22" y="115" width="112" height="30" rx="15" fill="#fff" stroke="#2563eb" stroke-width="1.5"/><circle cx="40" cy="130" r="6" fill="#2563eb"/><text x="52" y="134" fill="#1e3a8a">Memory</text>
+    <rect x="22" y="178" width="112" height="30" rx="15" fill="#fff" stroke="#7c3aed" stroke-width="1.5"/><circle cx="40" cy="193" r="6" fill="#7c3aed"/><text x="52" y="197" fill="#5b21b6">Architectures</text>
+  </g>
+  <g fill="none" stroke="#d97706" stroke-width="2"><path d="M134 67 C160 67 160 130 186 130 M134 130 H186 M134 193 C160 193 160 130 186 130"/></g>
+  <path d="M186 123 l10 7 -10 7z" fill="#d97706"/>
+  <rect x="200" y="52" width="178" height="156" rx="12" fill="#fff" stroke="#f3c98b" stroke-width="1.5"/>
+  <rect x="200" y="52" width="178" height="26" rx="12" fill="#d97706"/><rect x="200" y="66" width="178" height="12" fill="#d97706"/>
+  <g fill="#fff"><circle cx="216" cy="65" r="4"/><circle cx="230" cy="65" r="4"/><circle cx="244" cy="65" r="4"/></g>
+  <text x="362" y="70" font-size="11" font-weight="700" fill="#fff" text-anchor="end">science code</text>
+  <g fill="#f3c98b"><rect x="216" y="94" width="96" height="8" rx="4"/><rect x="230" y="112" width="120" height="8" rx="4"/><rect x="230" y="130" width="80" height="8" rx="4"/><rect x="216" y="148" width="110" height="8" rx="4"/><rect x="230" y="166" width="70" height="8" rx="4"/></g>
+  <g font-size="10.5" font-weight="700" fill="#92400e" text-anchor="middle">
+    <rect x="212" y="182" width="44" height="18" rx="9" fill="#fdf3e4"/><text x="234" y="195">HEP</text>
+    <rect x="262" y="182" width="62" height="18" rx="9" fill="#fdf3e4"/><text x="293" y="195">photonics</text>
+    <rect x="330" y="182" width="40" height="18" rx="9" fill="#fdf3e4"/><text x="350" y="195">DFT</text>
+  </g>
+  <text x="200" y="240" font-size="12" font-weight="600" fill="#92400e" text-anchor="middle">our methods, applied to production scientific codes</text>
+</svg>

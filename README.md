@@ -28,7 +28,8 @@ Local preview, which needs Ruby:
 | File | What it controls |
 |---|---|
 | `_config.yml` | Site title, tagline, URL, contact details, author names shown in bold |
-| `_data/research.yml` | The four research lines (title, summary, topics, keywords). Their `id`s tag everything else |
+| `_data/research.yml` | The four research lines (title, one-line lead, three topics, illustration). Their `id`s tag everything else |
+| `assets/img/research/*.svg` | One illustration per research line, shown on the Research page |
 | `_data/team.yml` | Group leader, PhD candidates, MSc students, alumni, collaborators |
 | `_data/publications.yml` | Publications. `selected: true` puts one on the home page |
 | `_data/projects.yml` | Projects page |
@@ -59,11 +60,10 @@ can be linked directly, e.g. `/publications/?line=energy`.
 
 ## Note on the publication list
 
-The list was compiled from OpenAlex and Crossref metadata (November 2026).
-OpenAlex merges several researchers named "André Pereira" into one profile, so the
-following works were left out as belonging to someone else: high-entropy alloys
-(2026), AranduFlow (2026), cicada-wing Raman spectroscopy (2025) and
-ultra-compact nanophotonics (2014). Please check the borderline inclusions as
-well: Berry (CPC 2024), Hilight (SPIE 2019) and the decarbonisation review
-(RSER 2024). Years follow the issue date in Crossref, so the RSER and Berry
-papers, published online in 2023, are listed under 2024.
+The list shows publications from 2023 onwards. It was compiled from OpenAlex and
+Crossref metadata (November 2026). OpenAlex merges several researchers named
+"André Pereira" into one profile, so works by other people were left out. Please
+check the Berry paper (CPC 2024) and the decarbonisation review (RSER 2024).
+Years follow the issue date in Crossref, so these two papers, published online
+in 2023, are listed under 2024. Older papers, such as the HEP-Frame articles from
+2015–2021, can be added back to `_data/publications.yml` at any time.

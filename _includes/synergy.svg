@@ -1,66 +1,70 @@
-<svg class="synergy" viewBox="0 0 960 440" role="img" aria-labelledby="syn-title syn-desc" xmlns="http://www.w3.org/2000/svg">
+<svg class="synergy" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" viewBox="0 0 960 440" role="img" aria-labelledby="syn-title syn-desc" xmlns="http://www.w3.org/2000/svg">
   <title id="syn-title">Four research lines around one goal: resource efficiency for HPC systems</title>
   <desc id="syn-desc">Resource efficiency for HPC systems is the common goal at the centre. Four lines branch from it: energy and carbon efficiency, memory disaggregation, emerging architectures and scientific computing. Memory disaggregation lets existing systems process workloads larger than one node's memory, which extends the life of the hardware. Emerging architectures lower energy per operation. Scientific computing supplies HPC kernels and large-memory workloads.</desc>
   <defs>
-    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" class="syn-arrowhead"/></marker>
-    <marker id="arr-e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10z" class="syn-chainhead"/></marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" class="syn-arrowhead" fill="#64748b"/></marker>
+    <marker id="arr-e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10z" class="syn-chainhead" fill="#0e9f6e"/></marker>
+    <linearGradient id="hubgrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2540"/><stop offset="1" stop-color="#0e5a63"/>
+    </linearGradient>
   </defs>
 
   <!-- spokes from the common goal to each line (drawn first, boxes cover their ends) -->
-  <path d="M480 220 L170 80"  class="syn-spoke s-energy"/>
-  <path d="M480 220 L790 80"  class="syn-spoke s-memory"/>
-  <path d="M480 220 L170 360" class="syn-spoke s-architectures"/>
-  <path d="M480 220 L790 360" class="syn-spoke s-science"/>
+  <path d="M480 220 L170 80"  class="syn-spoke s-energy" stroke="#0e9f6e" stroke-width="7" stroke-linecap="round" fill="none" opacity=".35"/>
+  <path d="M480 220 L790 80"  class="syn-spoke s-memory" stroke="#2563eb" stroke-width="7" stroke-linecap="round" fill="none" opacity=".35"/>
+  <path d="M480 220 L170 360" class="syn-spoke s-architectures" stroke="#7c3aed" stroke-width="7" stroke-linecap="round" fill="none" opacity=".35"/>
+  <path d="M480 220 L790 360" class="syn-spoke s-science" stroke="#d97706" stroke-width="7" stroke-linecap="round" fill="none" opacity=".35"/>
 
   <!-- cross-links between lines -->
-  <path d="M80 298 V144" class="syn-edge" marker-end="url(#arr)"/>
-  <text x="92" y="216" class="syn-e start">energy per</text>
-  <text x="92" y="232" class="syn-e start">operation</text>
-  <path d="M880 298 V144" class="syn-edge" marker-end="url(#arr)"/>
-  <text x="868" y="216" class="syn-e end">large-memory</text>
-  <text x="868" y="232" class="syn-e end">workloads</text>
-  <path d="M638 392 H324" class="syn-edge" marker-end="url(#arr)"/>
-  <text x="481" y="414" class="syn-e">HPC kernels to evaluate</text>
+  <path d="M80 298 V144" class="syn-edge" stroke="#64748b" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+  <text x="92" y="216" class="syn-e start" font-size="12.5" text-anchor="start" fill="#64748b" font-style="italic">energy per</text>
+  <text x="92" y="232" class="syn-e start" font-size="12.5" text-anchor="start" fill="#64748b" font-style="italic">operation</text>
+  <path d="M880 298 V144" class="syn-edge" stroke="#64748b" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+  <text x="868" y="216" class="syn-e end" font-size="12.5" text-anchor="end" fill="#64748b" font-style="italic">large-memory</text>
+  <text x="868" y="232" class="syn-e end" font-size="12.5" text-anchor="end" fill="#64748b" font-style="italic">workloads</text>
+  <path d="M638 392 H324" class="syn-edge" stroke="#64748b" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+  <text x="481" y="414" class="syn-e" font-size="12.5" text-anchor="middle" fill="#64748b" font-style="italic">HPC kernels to evaluate</text>
 
   <!-- the four lines -->
   <g class="syn-node node-energy">
-    <rect x="20" y="20" width="300" height="120" rx="14"/>
-    <text x="170" y="56" class="syn-h c-energy">Energy &amp; carbon efficiency</text>
-    <text x="122" y="84" class="syn-t end">measure</text>
-    <path d="M128 79.5 H146" class="syn-chain" marker-end="url(#arr-e)"/>
-    <text x="170" y="84" class="syn-t">model</text>
-    <path d="M194 79.5 H212" class="syn-chain" marker-end="url(#arr-e)"/>
-    <text x="218" y="84" class="syn-t start">decide</text>
-    <text x="170" y="106" class="syn-t">Arm power controls · WAVE</text>
-    <text x="170" y="124" class="syn-t">carbon-aware scheduling</text>
+    <rect x="20" y="20" width="300" height="120" rx="14" fill="#ffffff" stroke="#0e9f6e" stroke-width="2"/>
+    <text x="170" y="56" class="syn-h c-energy" font-size="18" font-weight="750" text-anchor="middle" fill="#0e9f6e">Energy &amp; carbon efficiency</text>
+    <text x="122" y="84" class="syn-t end" font-size="13.5" text-anchor="end" fill="#3b4a5f">measure</text>
+    <path d="M128 79.5 H146" class="syn-chain" stroke="#0e9f6e" stroke-width="1.6" fill="none" marker-end="url(#arr-e)"/>
+    <text x="170" y="84" class="syn-t" font-size="13.5" text-anchor="middle" fill="#3b4a5f">model</text>
+    <path d="M194 79.5 H212" class="syn-chain" stroke="#0e9f6e" stroke-width="1.6" fill="none" marker-end="url(#arr-e)"/>
+    <text x="218" y="84" class="syn-t start" font-size="13.5" text-anchor="start" fill="#3b4a5f">decide</text>
+    <text x="170" y="106" class="syn-t" font-size="13.5" text-anchor="middle" fill="#3b4a5f">Arm power controls · WAVE</text>
+    <text x="170" y="124" class="syn-t" font-size="13.5" text-anchor="middle" fill="#3b4a5f">carbon-aware scheduling</text>
   </g>
   <g class="syn-node node-memory">
-    <rect x="640" y="20" width="300" height="120" rx="14"/>
-    <text x="790" y="56" class="syn-h c-memory">Memory disaggregation</text>
-    <text x="790" y="84" class="syn-t">pooling memory across nodes</text>
-    <text x="790" y="106" class="syn-t">application-level data placement</text>
-    <text x="790" y="124" class="syn-t">longer life for existing systems</text>
+    <rect x="640" y="20" width="300" height="120" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="790" y="56" class="syn-h c-memory" font-size="18" font-weight="750" text-anchor="middle" fill="#2563eb">Memory disaggregation</text>
+    <text x="790" y="84" class="syn-t" font-size="13.5" text-anchor="middle" fill="#3b4a5f">pooling memory across nodes</text>
+    <text x="790" y="106" class="syn-t" font-size="13.5" text-anchor="middle" fill="#3b4a5f">application-level data placement</text>
+    <text x="790" y="124" class="syn-t" font-size="13.5" text-anchor="middle" fill="#3b4a5f">longer life for existing systems</text>
   </g>
   <g class="syn-node node-architectures">
-    <rect x="20" y="300" width="300" height="120" rx="14"/>
-    <text x="170" y="336" class="syn-h c-architectures">Emerging architectures</text>
-    <text x="170" y="364" class="syn-t">CGRA design-space exploration</text>
-    <text x="170" y="386" class="syn-t">cross-architecture</text>
-    <text x="170" y="404" class="syn-t">characterisation</text>
+    <rect x="20" y="300" width="300" height="120" rx="14" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+    <text x="170" y="336" class="syn-h c-architectures" font-size="18" font-weight="750" text-anchor="middle" fill="#7c3aed">Emerging architectures</text>
+    <text x="170" y="364" class="syn-t" font-size="13.5" text-anchor="middle" fill="#3b4a5f">CGRA design-space exploration</text>
+    <text x="170" y="386" class="syn-t" font-size="13.5" text-anchor="middle" fill="#3b4a5f">cross-architecture</text>
+    <text x="170" y="404" class="syn-t" font-size="13.5" text-anchor="middle" fill="#3b4a5f">characterisation</text>
   </g>
   <g class="syn-node node-science">
-    <rect x="640" y="300" width="300" height="120" rx="14"/>
-    <text x="790" y="336" class="syn-h c-science">Scientific computing</text>
-    <text x="790" y="364" class="syn-t">HEP · quantum photonics · materials</text>
-    <text x="790" y="386" class="syn-t">performance engineering of</text>
-    <text x="790" y="404" class="syn-t">production science codes</text>
+    <rect x="640" y="300" width="300" height="120" rx="14" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+    <text x="790" y="336" class="syn-h c-science" font-size="18" font-weight="750" text-anchor="middle" fill="#d97706">Scientific computing</text>
+    <text x="790" y="364" class="syn-t" font-size="13.5" text-anchor="middle" fill="#3b4a5f">HEP · quantum photonics · materials</text>
+    <text x="790" y="386" class="syn-t" font-size="13.5" text-anchor="middle" fill="#3b4a5f">our research applied to</text>
+    <text x="790" y="404" class="syn-t" font-size="13.5" text-anchor="middle" fill="#3b4a5f">scientific code</text>
   </g>
 
   <!-- common goal -->
-  <g class="syn-hub">
-    <rect x="335" y="160" width="290" height="120" rx="60"/>
-    <text x="480" y="202" class="hub-h">Resource Efficiency</text>
-    <text x="480" y="226" class="hub-s">for HPC systems</text>
-    <text x="480" y="254" class="hub-t">per joule · per gram CO₂ · per byte</text>
+  <g class="syn-hub" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" text-anchor="middle">
+    <rect x="330" y="158" width="300" height="124" rx="62" fill="url(#hubgrad)" stroke="#7fb3ff" stroke-opacity=".55" stroke-width="2"/>
+    <text x="480" y="204" font-size="23" font-weight="800" fill="#ffffff">Resource Efficiency</text>
+    <text x="480" y="229" font-size="15" font-weight="600" fill="#a7f3d0">for HPC systems</text>
+    <line x1="425" y1="242" x2="535" y2="242" stroke="#ffffff" stroke-opacity=".25"/>
+    <text x="480" y="262" font-size="12.5" fill="#dbe7f5">per joule · per gram CO₂ · per byte</text>
   </g>
 </svg>
