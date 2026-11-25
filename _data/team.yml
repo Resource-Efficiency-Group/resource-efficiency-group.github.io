@@ -3,7 +3,7 @@
 # lines: research-line ids from _data/research.yml
 
 pi:
-  name: André Martins Pereira
+  name: André Pereira
   role: Group Leader
   position: >-
     Department of Informatics, University of Minho · Researcher at INESC TEC
@@ -20,18 +20,17 @@ pi:
     from earlier work on efficient data analysis for the LHC (HEP-Frame). He
     helped design UMinho's Master in Advanced Computing and has been its Adjunct
     Director since its first edition. He teaches Advanced Computing Architectures
-    in the Master and parallel programming and computing systems at BSc level. At INESC TEC he contributes to EPICURE, the EuroHPC
-    application-support project.
+    in the Master and parallel programming and computing systems at BSc level.
   lines: [energy, memory, architectures, science]
 
 phd:
-  - name: PhD Candidate            # TODO: name
-    topic: Thesis topic to be announced   # TODO
+  - name: Gonçalo Raposo            # TODO: name
+    topic: Exploring disaggregated memory in HPC systems, simulating topologies and developing data placement strategies  # TODO
     photo: ""
-    lines: [energy, memory]       # TODO
+    lines: [memory]       # TODO
 
 msc:
-  - name: Tomás Alexandre Torres Pereira
+  - name: Tomás Pereira
     topic: A design-space exploration framework for hardware–software co-design of coarse-grained reconfigurable architectures
     lines: [architectures]
     photo: ""
@@ -39,26 +38,33 @@ msc:
     topic: Exploring disaggregated memory in HPC systems, with object-level memory disaggregation over MPI
     lines: [memory]
     photo: ""
-  - name: MSc Student            # TODO: name
+  - name: Humberto Gomes            # TODO: name
     topic: Energy consumption management in Arm processors (A64FX and NVIDIA Grace)
     lines: [energy]
     photo: ""
-  - name: MSc Student            # TODO: name
+  - name: José Lopes            # TODO: name
     topic: Carbon-aware job scheduling on the Deucalion supercomputer
     lines: [energy]
     photo: ""
-  - name: MSc Student            # TODO: name
+  - name: Luís Silva            # TODO: name
     topic: HPC optimisation of a quantum-photonics simulation workflow (QUANTHOS) on Deucalion
-    lines: [science]
+    lines: [energy, science]
     photo: ""
 
 alumni:
-  - name: Pedro Miguel Oliveira Carvalho
+  - name: Pedro Carvalho
     degree: MSc
     topic: "WAVE: a workload-aware Vessim extension for HPC sustainability simulation"
     outcome: Published at the PECS 2025 workshop (Euro-Par 2025)
     now: INESC TEC
     lines: [energy]
+
+  - name: Carolina Gomes
+    degree: MSc
+    topic: "Optimising the Berry suite for DFS"
+    outcome: Published at the Computational Physics Communications (COMPHY)
+    now: INESC TEC
+    lines: [energy, science]
 
 collaborators:
   - name: Alberto José Proença
@@ -67,7 +73,5 @@ collaborators:
     affiliation: LIP / University of Minho
   - name: Ariel Guerreiro
     affiliation: INESC TEC & University of Porto (QUANTHOS PI)
-  - name: Ricardo J. Bessa
-    affiliation: INESC TEC
   - name: Deucalion operations team
     affiliation: CNCA — Advanced Computing National Centre
