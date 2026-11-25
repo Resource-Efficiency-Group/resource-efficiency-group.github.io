@@ -1,4 +1,5 @@
 # status: active | completed | education | infrastructure
+# links (optional): list of {label, url} buttons shown under the role
 # lines: research-line ids
 
 - name: EPICURE
@@ -32,6 +33,56 @@
   role: >-
     HPC optimisation of the project's quantum-transport simulation workflow on
     the x86 and Arm partitions of Deucalion (MSc dissertation).
+  lines: [science]
+
+- name: Sustainable HPC
+  full_name: Highly Sustainable High-Performance Computing
+  status: active
+  period: Jul 2021 – Dec 2025
+  funding: Fundo de Apoio à Inovação and Fundo de Eficiência Energética (Portugal)
+  url: ""
+  summary: >-
+    Sustainable HPC develops an energy-management system that minimises the
+    carbon footprint of Deucalion's operation. It coordinates computing and
+    energy resources: on-site solar and wind generation, second-life battery
+    storage, the grid, cooling, and the computing workload itself. Predictive
+    models decide at each moment which mix of resources gives the cleanest
+    operation. The consortium is INESC TEC and INEGI, and the global budget is
+    €7.3M.
+  role: >-
+    INESC TEC partner team. The group contributes the computing side, that is,
+    how HPC workloads and system operation shape energy use and carbon
+    emissions. This work includes our review on the decarbonisation of HPC
+    centres.
+  links:
+    - label: "Review: decarbonisation of HPC centres (RSER 2024)"
+      url: https://doi.org/10.1016/j.rser.2023.114019
+  lines: [energy]
+
+- name: exaSIMPLE
+  full_name: A Hybrid ML-CFD SIMPLE Algorithm for the Exascale Era
+  status: completed
+  period: Mar 2024 – Feb 2025
+  funding: Inno4scale · EuroHPC Joint Undertaking
+  url: https://www.inesctec.pt/en/projects/exasimple
+  summary: >-
+    exaSIMPLE prepares SIMPLE-type CFD solvers for exascale systems by bringing
+    machine learning into the solver. Graph neural networks replace the linear
+    solver of the pressure-correction equation, and a data-driven model improves
+    pressure-velocity coupling. The work builds on the industrial CFD code
+    ReFRESCO with PETSc and PyTorch, and ran on Deucalion's CPU and GPU nodes.
+    The consortium was blueOASIS (coordinator), INESC TEC and MARIN (Maritime
+    Research Institute Netherlands).
+  role: >-
+    INESC TEC principal investigator (André Martins Pereira): HPC support on
+    Deucalion and optimisation of the solver for heterogeneous CPU-GPU nodes.
+  links:
+    - label: Code (GitHub)
+      url: https://github.com/blueOceanSustainableSolutions/exaSIMPLE
+    - label: Inno4scale success story
+      url: https://www.inno4scale.eu/success-story-exasimple/
+    - label: blueOASIS case study
+      url: https://www.blueoasis.tech/projects/exaSIMPLE-leveraging-machine-learning-for-exascale-CFD
   lines: [science]
 
 - name: Deucalion living laboratory
