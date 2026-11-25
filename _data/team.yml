@@ -50,6 +50,10 @@ msc:
     topic: HPC optimisation of a quantum-photonics simulation workflow (QUANTHOS) on Deucalion
     lines: [energy, science]
     photo: ""
+  - name: Nuno Gomes
+    topic: Simulating topologies for disaggregated memory in HPC systems
+    lines: [memory]
+    photo: ""
 
 alumni:
   - name: Pedro Carvalho
